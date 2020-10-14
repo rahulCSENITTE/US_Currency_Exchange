@@ -58,6 +58,7 @@ In this project we are simulating the working of currency exchange service. Foll
 ## Money Deposite to Account
 
 In this we assume that the end user need to have and account in US Exchange and if he/she needs Indian Rupees to be converted to USA Dollars it will be deducted from this Account.
+
 To Add Money we have to function 
 1. deposite_inr
 2. deposite_dollars
