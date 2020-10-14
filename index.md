@@ -10,13 +10,12 @@ In this project we are simulating the working of currency exchange service. Foll
 
 ### Implementation 
 
-`pragma solidity ^0.5.0;
-
-contract Currencyconverter{
+`
+    pragma solidity ^0.5.0;
+    contract Currencyconverter{
     mapping(address=>uint) private balances;
     address public owner;
 
-    
     uint Dollar_value=73;
     
     function deposite_inr()public payable returns (uint){
@@ -48,8 +47,8 @@ contract Currencyconverter{
     function balance() view public returns (uint){
         return balances[msg.sender];
     }
-    
-}`
+    }
+`
 
 
 
