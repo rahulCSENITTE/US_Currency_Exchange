@@ -119,11 +119,14 @@ It has two functions
 ```
 In this function for given parameter it converts that to Indian Rupees.
 
+![](images/Screenshot%20(336).png)
+
 ### Function: rupees_to_dollars()
 ```markdown    
     function rupees_to_dollars(uint checkAmount) view public returns (uint) {
         return (checkAmount/Dollar_value);
     }
 ```
-
 In this function for given parameter it converts that to Dollar Rupees.
+
+![](images/Screenshot%20(337).png)
