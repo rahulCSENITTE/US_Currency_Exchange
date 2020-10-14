@@ -55,15 +55,15 @@ In this project we are simulating the working of currency exchange service. Foll
     }
 ```
 
-## Money Deposite to Account
+## Money Deposit to Account
 
-In this we assume that the end user need to have and account in US Exchange and if he/she needs Indian Rupees to be converted to USA Dollars it will be deducted from this Account.
+In this, we assume that the end user need to have and an account in US Exchange and if he/she needs Indian Rupees to be converted to USA Dollars it will be deducted from this Account.
 
-To Add Money we have to function 
+To add money we have two functions 
 1. deposite_inr
 2. deposite_dollars
 
-### Function: deposite_inr
+### Function: deposite_inr()
 
 ```markdown 
  function deposite_inr()public payable returns (uint){
@@ -74,7 +74,7 @@ To Add Money we have to function
 ```
 In this function deposite is done to the account from Indian Rupee to Indian Rupee(No convertion takes place).
 
-### Function: deposite_dollars
+### Function: deposite_dollars()
 
 ```markdown 
   function deposite_dollars()public payable returns (uint){
@@ -111,7 +111,7 @@ function balance() view public returns (uint){
 In this we assume that 1 Dollar = 73 Rupees and provide real time convertions.
 It has two functions
 
-### Function: dollar_to_rupees
+### Function: dollar_to_rupees()
 ```markdown
  function dollar_to_rupees(uint checkAmount) view public returns (uint) {
         return (checkAmount*Dollar_value);
@@ -119,7 +119,7 @@ It has two functions
 ```
 In this function for given parameter it converts that to Indian Rupees.
 
-### Function: rupees_to_dollars
+### Function: rupees_to_dollars()
 ```markdown    
     function rupees_to_dollars(uint checkAmount) view public returns (uint) {
         return (checkAmount/Dollar_value);
