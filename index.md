@@ -1,10 +1,14 @@
 ## Welcome to US Currency Exchange 
 
-blah blah
+This is a BCT project to simulate the Currency Exchange service.
 
 ### Case Scenario
 
-### 
+In this project we are simulating the working of currency exchange service. Following project we have used few assumptions.
+1. The Currency exchange service is limited to USA currency in Dollars and Indian Currency in Rs.
+2. Exchange Value 1 Dollar = 73 Rs.
+
+### Procedure to set up of project 
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
