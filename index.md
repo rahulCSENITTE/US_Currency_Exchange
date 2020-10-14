@@ -83,3 +83,22 @@ In this function deposite is done to the account from Indian Rupee to Indian Rup
     }
 ```
 In this function deposite is done to the account from USA Dollars to Indian Rupee(Convertion takes place).
+
+## Convertion Rates
+
+In this we assume that 1 Dollar = 73 Rupees and provide real time convertions.
+It has two functions
+
+#Function: dollar_to_rupees
+```markdown
+ function dollar_to_rupees(uint checkAmount) view public returns (uint) {
+        return (checkAmount*Dollar_value);
+    }
+```
+
+#Function: rupees_to_dollars
+```markdown    
+    function rupees_to_dollars(uint checkAmount) view public returns (uint) {
+        return (checkAmount/Dollar_value);
+    }
+```
