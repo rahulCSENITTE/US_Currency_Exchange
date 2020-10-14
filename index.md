@@ -9,7 +9,7 @@ This is a BCT project to simulate the Currency Exchange service.
 
 ## Case Scenario
 
-In this project we are simulating the working of currency exchange service. Following project we have used few assumptions.
+In this project we are simulating the working of currency exchange service. We have used the following assumptions.
 1. The Currency exchange service is limited to USA currency in Dollars and Indian Currency in Rupees.
 2. Exchange Value 1 Dollar = 73 Rupees.
 
@@ -60,8 +60,8 @@ In this project we are simulating the working of currency exchange service. Foll
 In this, we assume that the end user need to have and an account in US Exchange and if he/she needs Indian Rupees to be converted to USA Dollars it will be deducted from this Account.
 
 To add money we have two functions 
-1. deposite_inr
-2. deposite_dollars
+1. deposite_inr()
+2. deposite_dollars()
 
 ### Function: deposite_inr()
 
