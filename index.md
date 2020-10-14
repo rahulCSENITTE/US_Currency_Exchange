@@ -2,6 +2,11 @@
 
 This is a BCT project to simulate the Currency Exchange service.
 
+### Authors
+1. Rahul S (4NM17CS141)
+2. Raksha D Shetty (4NM17CS142)
+3. Rushali Shetty (4NM17CS152)
+
 ### Case Scenario
 
 In this project we are simulating the working of currency exchange service. Following project we have used few assumptions.
@@ -57,7 +62,7 @@ To Add Money we have to function
 1. deposite_inr
 2. deposite_dollars
 
-# deposite_inr
+# Function: deposite_inr
 
 ```markdown 
  function deposite_inr()public payable returns (uint){
@@ -68,4 +73,4 @@ To Add Money we have to function
 ```
 In this function deposite is done to the account from Indian Rupee to Indian Rupee(No convertion takes place).
 
-# deposite_dollars
+# Function: deposite_dollars
