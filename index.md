@@ -10,7 +10,7 @@ In this project we are simulating the working of currency exchange service. Foll
 
 ### Implementation 
 
-`
+`Code  
     pragma solidity ^0.5.0;
     contract Currencyconverter{
     mapping(address=>uint) private balances;
