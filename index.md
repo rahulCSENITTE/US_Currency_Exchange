@@ -50,34 +50,22 @@ In this project we are simulating the working of currency exchange service. Foll
     }
 ```
 
+## Money Deposite to Account
 
+In this function we assume that the end user need to have and account in US Exchange and if he/she needs Indian Rupees to be converted to USA Dollars it will be deducted from this Account.
+To Add Money we have to function 
+1. deposite_inr
+2. deposite_dollars
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# deposite_inr
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```markdown 
+ function deposite_inr()public payable returns (uint){
+        require((msg.sender.balance+(msg.value))>=msg.sender.balance);
+        balances[msg.sender]+=msg.value;
+        return balances[msg.sender];
+    }
 ```
+In this function deposite is done to the account from Indian Rupee to Indian Rupee(No convertion takes place).
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rahulCSENITTE/US_Currency_Exchange/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# deposite_dollars
