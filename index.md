@@ -16,43 +16,43 @@ In this project we are simulating the working of currency exchange service. We h
 ## Implementation 
 
 ```markdown 
-    pragma solidity ^0.5.0;
-    contract Currencyconverter{
-    mapping(address=>uint) private balances;
-    address public owner;
+   pragma solidity ^0.5.0;
+   contract Currencyconverter{
+   mapping(address=>uint) private balances;
+   address public owner;
 
-    uint Dollar_value=73;
+   uint Dollar_value=73;
     
-    function deposite_inr()public payable returns (uint){
+   function deposite_inr()public payable returns (uint){
         require((msg.sender.balance+(msg.value))>=msg.sender.balance);
         balances[msg.sender]+=msg.value;
         return balances[msg.sender];
-    }
+   }
     
-    function deposite_dollars()public payable returns (uint){
+   function deposite_dollars()public payable returns (uint){
         require((balances[msg.sender]+(msg.value*Dollar_value))>=balances[msg.sender]);
         balances[msg.sender]+=msg.value*Dollar_value;
         return msg.sender.balance;
-    }
+   }
     
-    function withdraw_dollars() public payable returns (uint remainingBal){
+   function withdraw_dollars() public payable returns (uint remainingBal){
         require(msg.value*Dollar_value <= balances[msg.sender]);
         balances[msg.sender]-=msg.value*Dollar_value;
         return msg.sender.balance;
-    }
+   }
     
-    function dollar_to_rupees(uint checkAmount) view public returns (uint) {
+   function dollar_to_rupees(uint checkAmount) view public returns (uint) {
         return (checkAmount*Dollar_value);
-    }  
+   }  
     
-    function rupees_to_dollars(uint checkAmount) view public returns (uint) {
+   function rupees_to_dollars(uint checkAmount) view public returns (uint) {
         return (checkAmount/Dollar_value);
-    }
+   }
 
-    function balance() view public returns (uint){
+   function balance() view public returns (uint){
         return balances[msg.sender];
-    }
-    }
+   }
+   }
 ```
 
 ## Money Deposit to Account
