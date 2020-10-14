@@ -74,6 +74,14 @@ To add money we have two functions
 ```
 In this, function deposit is done to the account from Indian Rupee to Indian Rupee(No conversion takes place).
 
+### Before calling function
+
+![](images/Screenshot%20(340).png)
+
+### After calling function
+
+![](images/Screenshot%20(341).png)
+
 ### Function: deposite_dollars()
 
 ```markdown 
@@ -85,6 +93,14 @@ In this, function deposit is done to the account from Indian Rupee to Indian Rup
 ```
 In this function, deposit is done to the account from USA Dollars to Indian Rupees(Conversion takes place).
 
+### Before calling function
+
+![](images/Screenshot%20(338).png)
+
+### After calling function
+
+![](images/Screenshot%20(339).png)
+
 ## Get Rupees in Dollars
 
 In this, we convert the given input USA Dollars to Indian Rupees and deduct the same from the account. If the balance is insufficient transaction will not proceed.
@@ -95,6 +111,13 @@ In this, we convert the given input USA Dollars to Indian Rupees and deduct the 
         return msg.sender.balance;
     }
 ```
+### Before calling function
+
+![](images/Screenshot%20(342).png)
+
+### After calling function
+
+![](images/Screenshot%20(343).png)
 
 ##  Balance Check
 
@@ -105,6 +128,8 @@ function balance() view public returns (uint){
         return balances[msg.sender];
     }
 ```
+
+![](images/Screenshot%20(339).png)
 
 ## Conversion Rates
 
