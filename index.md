@@ -95,6 +95,7 @@ It has two functions
         return (checkAmount*Dollar_value);
     }
 ```
+In this function for given parameter it converts that to Indian Rupees.
 
 #Function: rupees_to_dollars
 ```markdown    
@@ -102,3 +103,5 @@ It has two functions
         return (checkAmount/Dollar_value);
     }
 ```
+
+In this function for given parameter it converts that to Dollar Rupees.
