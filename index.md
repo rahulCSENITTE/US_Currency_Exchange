@@ -1,19 +1,19 @@
-## Welcome to US Currency Exchange 
+# Welcome to US Currency Exchange 
 
 This is a BCT project to simulate the Currency Exchange service.
 
-### Authors
+## Authors
 1. Rahul S (4NM17CS141)
 2. Raksha D Shetty (4NM17CS142)
 3. Rushali Shetty (4NM17CS152)
 
-### Case Scenario
+## Case Scenario
 
 In this project we are simulating the working of currency exchange service. Following project we have used few assumptions.
 1. The Currency exchange service is limited to USA currency in Dollars and Indian Currency in Rupees.
 2. Exchange Value 1 Dollar = 73 Rupees.
 
-### Implementation 
+## Implementation 
 
 ```markdown 
     pragma solidity ^0.5.0;
@@ -62,7 +62,7 @@ To Add Money we have to function
 1. deposite_inr
 2. deposite_dollars
 
-# Function: deposite_inr
+### Function: deposite_inr
 
 ```markdown 
  function deposite_inr()public payable returns (uint){
@@ -73,7 +73,7 @@ To Add Money we have to function
 ```
 In this function deposite is done to the account from Indian Rupee to Indian Rupee(No convertion takes place).
 
-# Function: deposite_dollars
+### Function: deposite_dollars
 
 ```markdown 
   function deposite_dollars()public payable returns (uint){
@@ -89,7 +89,7 @@ In this function deposite is done to the account from USA Dollars to Indian Rupe
 In this we assume that 1 Dollar = 73 Rupees and provide real time convertions.
 It has two functions
 
-# Function: dollar_to_rupees
+### Function: dollar_to_rupees
 ```markdown
  function dollar_to_rupees(uint checkAmount) view public returns (uint) {
         return (checkAmount*Dollar_value);
@@ -97,7 +97,7 @@ It has two functions
 ```
 In this function for given parameter it converts that to Indian Rupees.
 
-# Function: rupees_to_dollars
+### Function: rupees_to_dollars
 ```markdown    
     function rupees_to_dollars(uint checkAmount) view public returns (uint) {
         return (checkAmount/Dollar_value);
