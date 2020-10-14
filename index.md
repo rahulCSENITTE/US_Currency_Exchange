@@ -57,7 +57,7 @@ In this project we are simulating the working of currency exchange service. Foll
 
 ## Money Deposite to Account
 
-In this function we assume that the end user need to have and account in US Exchange and if he/she needs Indian Rupees to be converted to USA Dollars it will be deducted from this Account.
+In this we assume that the end user need to have and account in US Exchange and if he/she needs Indian Rupees to be converted to USA Dollars it will be deducted from this Account.
 To Add Money we have to function 
 1. deposite_inr
 2. deposite_dollars
@@ -74,3 +74,12 @@ To Add Money we have to function
 In this function deposite is done to the account from Indian Rupee to Indian Rupee(No convertion takes place).
 
 # Function: deposite_dollars
+
+```markdown 
+  function deposite_dollars()public payable returns (uint){
+        require((balances[msg.sender]+(msg.value*Dollar_value))>=balances[msg.sender]);
+        balances[msg.sender]+=msg.value*Dollar_value;
+        return msg.sender.balance;
+    }
+```
+In this function deposite is done to the account from USA Dollars to Indian Rupee(Convertion takes place).
