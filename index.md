@@ -84,6 +84,27 @@ In this function deposite is done to the account from Indian Rupee to Indian Rup
 ```
 In this function deposite is done to the account from USA Dollars to Indian Rupee(Convertion takes place).
 
+## Get Rupees in Dollars
+
+In this we convert the given input USA Dollars to Indian Rupees and deduct the same from the account. If the balance is insufficient transaction will not proceed.
+```markdown
+   function withdraw_dollars() public payable returns (uint remainingBal){
+        require(msg.value*Dollar_value <= balances[msg.sender]);
+        balances[msg.sender]-=msg.value*Dollar_value;
+        return msg.sender.balance;
+    }
+```
+
+##  Balance Check
+
+In this we check the current balance in account in Indian Rupees.
+
+```markdown
+function balance() view public returns (uint){
+        return balances[msg.sender];
+    }
+```
+
 ## Convertion Rates
 
 In this we assume that 1 Dollar = 73 Rupees and provide real time convertions.
