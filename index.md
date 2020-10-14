@@ -108,7 +108,7 @@ function balance() view public returns (uint){
 
 ## Conversion Rates
 
-In this we assume that 1 Dollar = 73 Rupees and provide real time convertions.
+In this we assume that 1 Dollar = 73 Rupees and provide real time conversions.
 It has two functions
 
 ### Function: dollar_to_rupees()
